@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Correct syntax for linking an external CSS file -->
+    <style>
+      .pixelify-sans-example {
+        font-family: "Pixelify Sans", sans-serif;
+      }
+      .cookie-gif {
+        display: none; /* Initially hide the GIF */
+        max-width: 100%; /* Ensure the GIF doesn't exceed its container */
+        height: auto; /* Maintain aspect ratio */
+      }
+      #calorie-count {
+        display: none; /* Initially hide the calorie count */
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 class="pixelify-sans-example">Zara's Cookies</h1>
+    <p class="pixelify-sans-example">
+      Cookies are good for your physical, mental, and psychological well-being,
+      great for when you are hungry or right before an exam
+    </p>
+    <form>
+      <!-- No need for action and method since we're handling submission with JavaScript -->
+      <label for="cookies-input" class="pixelify-sans-example"
+        >How many cookies do you want?</label
+      >
+      <input
+        type="text"
+        id="cookies-input"
+        name="cookies-quantity"
+        placeholder="Enter a number, please"
+        class="pixelify-sans-example"
+      />
+      <button type="button" id="confirm-button" class="pixelify-sans-example">
+        Confirm
+      </button>
+      <!-- Use type="button" to prevent form submission -->
+    </form>
+
+    <!-- Container for the cookie GIF -->
+    <div id="cookie-gif-container">
+      <img
+        src="cookieeater3.gif"
+        alt="Zara eating a cookie"
+        class="cookie-gif"
+      />
+    </div>
+
+    <!-- Calorie count display -->
+    <p id="calorie-count" class="pixelify-sans-example"></p>
+
+    <script src="index.js"></script>
+  </body>
+</html>
